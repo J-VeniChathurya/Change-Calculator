@@ -2,13 +2,13 @@
 price = int(input("Enter the price of the item (in cents, less than or equal to 100): "))
 
 # Validate input
-if price >= 100 or price < 0:
+if price > 100 or price < 0:
     print("Invalid price! Please enter a value between 0 and 99 cents.")
 else:
     change = 100 - price
 
     quarters = change // 25
-    change %= 25
+    change %= 2
 
     dimes = change // 10
     change %= 10
