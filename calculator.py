@@ -8,7 +8,7 @@ else:
     change = 100 - price
 
     quarters = change // 25
-    change %= 2
+    change %= 25
 
     dimes = change // 10
     change %= 10
